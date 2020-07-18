@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap 4 and jquery/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="row m-0 h-100 align-items-center">
+        <div class="col-5 mx-auto">
+            <form action="" name="Calculator" id="calc">
+                <input type="text" id="screen" name="screen" class="form-control form-control-lg bg-primary text-white">
+
+
+                <div class="button">
+                    <div class="row my-3">
+                        <div class="col-3 pr-2">
+                            <input type="button" value="7" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value+='7'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="8" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value +='8'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="9" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '9'">
+                        </div>
+                        <div class="col-3 pl-2">
+                            <input type="button" value="+" class="button-value btn btn-block btn-warning"
+                                onclick="Calculator.screen.value += '+'">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-3 pr-2">
+                            <input type="button" value="4" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '4'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="5" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '5'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="6" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '6'">
+                        </div>
+                        <div class="col-3 pl-2">
+                            <input type="button" value="-" class="button-value btn btn-block btn-danger"
+                                onclick="Calculator.screen.value += '-'">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-3 pr-2">
+                            <input type="button" value="1" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '1'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="2" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '2'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="3" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '3'">
+                        </div>
+                        <div class="col-3 pl-2">
+                            <input type="button" value="X" class="button-value btn btn-block btn-info"
+                                onclick="Calculator.screen.value += '*'">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-3 pr-2">
+                            <input type="button" value="0" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += '0'">
+                        </div>
+                        <div class="col-3 px-2">
+                            <input type="button" value="C" class="button-value btn btn-block btn-dark"
+                                onclick="Calculator.screen.value += ' '">
+                        </div>
+                        <div class="col-3 px-2">
+                            <!-- <input type="button" value="=" class="button-value btn btn-block btn-success"
+                                 onclick="equal()"> -->   <!-- this is for js use-->
+                            <input type="button" value="=" class="button-value btn btn-block btn-success"
+                                onclick="Calculator.screen.value = eval(Calculator.screen.value)"> <!-- this is for inline js-->
+                        </div>
+                        <div class="col-3 pl-2">
+                            <input type="button" value="&#247" class="button-value btn btn-block btn-secondary"
+                                onclick="Calculator.screen.value += '/'">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="bootstrap 4 and jquery/jquery-3.3.1.js"></script>
+    <script src="bootstrap 4 and jquery/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
